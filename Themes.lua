@@ -5,14 +5,14 @@ local Themes = {
     ["Color Theme"] = Color3.fromRGB(30, 150, 240),
     ["Color Text"] = Color3.fromRGB(240, 240, 240),
     ["Color Dark Text"] = Color3.fromRGB(200, 200, 200),
-    ["Color Stroke"] = Color3.fromRGB(80, 80, 80),
+    ["Color Stroke"] = Color3.fromRGB(102, 0, 204),
     ["Corner Radius"] = UDim.new(0, 5),
     ["Font"] = {
       Enum.Font.GothamBlack,
       Enum.Font.GothamBold,
       Enum.Font.GothamMedium
     },
-    ["Stroke Thickness"] = 1,
+    ["Stroke Thickness"] = 0.8,
     ["Tween Style"] = Enum.EasingStyle.Quad
   },
 }
