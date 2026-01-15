@@ -7,14 +7,12 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 local Player = Players.LocalPlayer
 
-local LibraryRawUrl = "https://raw.githubusercontent.com/speedvip1/Main/refs/heads/main/Themes.lua"
-
 local redzLib = {
   info = {
     Version = "v1.2.2",
     PlaceName = MarketplaceService:GetProductInfo(game.PlaceId).Name
   },
-  Themes = loadstring(game:HttpGet(LibraryRawUrl .. "/Themes.lua"))(),
+  Themes = loadstring(game:HttpGet("https://raw.githubusercontent.com/speedvip1/Main/refs/heads/main/Themes.lua"))(),
   Flags = {},
   Save = {
     Theme = "Default",
@@ -22,7 +20,7 @@ local redzLib = {
     ScrollSize = 160,
     TransparencyHub = 0.1
   },
-  Icons = loadstring(game:HttpGet(LibraryRawUrl .. "/Icons.lua"))() --[[
+  Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Icons.lua"))() --[[
     I found this source on fluent but I don't know who created it
     source -- https://github.com/dawid-scripts/Fluent/blob/master/src/Icons.lua --
   ]],
@@ -38,7 +36,6 @@ local redzLib = {
     Toggle = {}
   }
 }
-
 local function GetIcon(GetName)
   if #GetName:split("") < 1 then return GetName end
   
